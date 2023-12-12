@@ -1,0 +1,12 @@
+{
+  "username": "john_doe",
+  "password": "secretpassword",
+  "age": 25,
+  "isStudent": true,
+  "courses": ["Math", "English", "History"],
+  "address": {
+    "city": "New York",
+    "state": "NY",
+    "zipCode": "10001"
+  }
+}

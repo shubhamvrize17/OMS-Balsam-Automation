@@ -1,0 +1,17 @@
+<Shipment DocumentType="0001" EnterpriseCode="BH_US" SellerOrganizationCode="BH_US" SCAC="LS" ShipmentNo="DF21Q0245T6" CarrierServiceCode="Ground" ShipNode="43">
+   
+    <Containers>
+        <Container TrackingNo="234586">
+            <ContainerDetails>
+                <ContainerDetail Quantity="1">
+                    <Extn ExtnUPCID="MPQAEMAIL219"/>
+                    <ShipmentLine PrimeLineNo="2" OrderNo="Y100036611" SubLineNo="1" ReleaseNo="1" ItemID="MPQAEMAIL_2_2" ProductClass="NEW" UnitOfMeasure="EACH">
+                    </ShipmentLine>
+                </ContainerDetail>
+            </ContainerDetails>
+        </Container>
+    </Containers>
+    <ShipmentLines>
+        <ShipmentLine PrimeLineNo="2" OrderNo="Y100036611" SubLineNo="1" Quantity="1" ReleaseNo="1" ItemID="MPQAEMAIL_2_2" ProductClass="NEW" UnitOfMeasure="EACH" Segment="ONLINE" SegmentType="WEBSITE"/>
+    </ShipmentLines>
+</Shipment>

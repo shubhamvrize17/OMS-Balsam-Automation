@@ -1,0 +1,12 @@
+testRunners\TestRunner.class
+pages\web\ManageChargesWebPage.class
+pages\api\ApiPageObjects.class
+pages\web\CancelProductWebPage.class
+pages\web\WebPageObjects.class
+stepDefinitions\APIStepDefinitions.class
+stepDefinitions\MobileStepDefinitions.class
+stepDefinitions\WebStepDefinitions.class
+stepDefinitions\CallCenterUI_SecnarioStepDef.class
+pages\web\LoginWebPage.class
+pages\mobile\MobilePageObjects.class
+pages\web\ManageGiftOptions.class

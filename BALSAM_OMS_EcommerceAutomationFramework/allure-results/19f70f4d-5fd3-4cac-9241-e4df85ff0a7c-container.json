@@ -1,0 +1,1 @@
+{"uuid":"19f70f4d-5fd3-4cac-9241-e4df85ff0a7c","name":"testRunners.TestRunner.SETUP","children":["4e23e3a8-ff27-4da8-be79-2ec2ce373281"],"description":"","befores":[{"name":"SETUP","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1702010147183,"stop":1702010158889}],"afters":[],"start":1702010147183,"stop":1702010158890}

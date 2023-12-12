@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="CucumberTestSuite" parallel="methods" thread-count="2">
+    <test name="WebTests">
+        <packages>
+            <package name="stepDefinitions"/>
+        </packages>
+        <classes>
+            <class name="testRunners.TestRunner"/>
+        </classes>
+    </test>
+</suite>
+

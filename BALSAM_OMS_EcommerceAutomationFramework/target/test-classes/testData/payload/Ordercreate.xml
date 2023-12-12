@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Order CustomerEMailID="SACHKAV123@GMAIL.COM" CustomerFirstName="KAVITA" CustomerLastName="SACHDEVA" CustomerPhoneNo="+14084444444" CustomerZipCode="94063" DocumentType="0001" EnterpriseCode="BH_US" EntryType="WEBSITE" LevelOfService="ONE_DAY" OrderDate="2023-11-22T01:27:08Z" OrderNo="" OrderType="HYBRIS" SellerOrganizationCode="BH_US" ReqShipDate="" TaxExemptFlag="">
+    <PriceInfo Currency="USD"/>
+    <Extn ExtnGaTagId="xd234234" ExtnCustomerID="60279c1e-5298-4303-aab7-89c7fe0665ec" ExtnFraudStatus="ACCEPT" ExtnSMSOptIn="Y" ExtnOrderLocaleCode="UTC" ExtnIsAvalara="Y" ExtnTaxTransactionDate="2023-07-20"/>
+    <OrderLines>
+        <OrderLine DeliveryMethod="SHP" ItemGroupCode="PROD" OrderedQty="1" PrimeLineNo="1" SubLineNo="1" Segment="ONLINE" SegmentType="WEBSITE" ReqShipDate="" PersonalizeFlag="N">
+            <Extn ExtnPriceType="Standard" ExtnItemID="NWW-W"/>
+            <Item TaxProductCode="P0000000" ItemID="MYPPCRT6" ProductClass="NEW" UnitOfMeasure="EACH"/>
+            <LinePriceInfo IsPriceLocked="Y" UnitPrice="500" RetailPrice="500"/>
+            <LineTaxes>
+                <LineTax ChargeCategory="PRODUCT" ChargeName="06-U-0.06" Tax="60.0" TaxName="CA STATE TAX" TaxPercentage="0.06"/>
+                <LineTax ChargeCategory="PRODUCT" ChargeName="081-U-0.0025" Tax="2.5" TaxName="CA COUNTY TAX" TaxPercentage="0.0025"/>
+                <LineTax ChargeCategory="PRODUCT" ChargeName="EMBG0-U-0.02125" Tax="21.25" TaxName="CA SPECIAL TAX" TaxPercentage="0.02125"/>
+                <LineTax ChargeCategory="PRODUCT" ChargeName="EMTY0-U-0.01" Tax="10.0" TaxName="CA SPECIAL TAX" TaxPercentage="0.01"/>
+            </LineTaxes>
+            <References>
+                <Reference Name="ReservationID" Value=""> </Reference>
+            </References>
+        </OrderLine>
+    </OrderLines>
+    
+    <PaymentMethods>
+        <PaymentMethod CreditCardExpDate="1225" CreditCardNo="0000" DisplayCreditCardNo="1111" CreditCardType="VISA" FirstName="Test" LastName="" PaymentType="CREDIT_CARD">
+            <PaymentDetailsList>
+                <PaymentDetails AuthTime="2023-07-13T10:27:48Z" AuthorizationExpirationDate="2023-07-20 10:27:48" AuthorizationID="a1zbjy02" ChargeType="CHARGE" ProcessedAmount="593.75" RequestAmount="593.75"/>
+            </PaymentDetailsList>
+        </PaymentMethod>
+    </PaymentMethods>
+    <Instructions/>
+    <PersonInfoShipTo AddressLine1="700 Jefferson Avenue FI 2" AddressLine2="" AddressLine3="" City="Redwood" Company="" Country="US" DayPhone="+14084444444" Beeper="" EMailID="sachkav123@gmail.com" FirstName="Kavita" LastName="Sachdeva" State="CA" ZipCode="94063" IsCommercialAddress="N"/>
+    <PersonInfoBillTo AddressLine1="11 W 53rd St" AddressLine2="" AddressLine3="" City="Denver" Company="" Country="US" DayPhone="+17977987987" Beeper="" EMailID="sachkav123@gmail.com" FirstName="Kavita" LastName="Sachdeva" State="CO" ZipCode="80001" IsCommercialAddress="N"/>
+    <HeaderCharges>
+    </HeaderCharges>
+</Order>
