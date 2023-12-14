@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.Map;
 
@@ -28,7 +29,6 @@ public class StatusCheckingStepDef extends BasePage {
 
 		cr = new StatusCheckingWebPage(driver);
 	}
-
 
 	@When("User enter <username> and <password> for status checking page")
 	public void user_enter_username_and_password_for_status_checking_page(List<Map<String, String>> credentials) {
@@ -65,26 +65,31 @@ public class StatusCheckingStepDef extends BasePage {
 	@Then("The order should be in Created status")
 	public void The_order_should_be_in_Created_status() {
 		cr.isOrderSummaryPageDisplayed();
+		driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(2));
 	}
-	// scenario -
+
 	@Then("The order should be in Scheduled status")
 	public void The_order_should_be_in_Scheduled_status() {
 		cr.isOrderSummaryPageDisplayed();
+		driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(2));
 	}
 
 	@Then("The order should be in Released status")
 	public void The_order_should_be_in_Released_status() {
 		cr.isOrderSummaryPageDisplayed();
+		driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(2));
 	}
 
 	@Then("The order should be in Shipment status")
 	public void The_order_should_be_in_Shipment_status() {
 		cr.isOrderSummaryPageDisplayed();
+		driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(2));
 	}
 
 	@Then("The order should be in Delivered status")
 	public void The_order_should_be_in_Delivered_status() {
 		cr.isOrderSummaryPageDisplayed();
+		driver.manage().timeouts().implicitlyWait(Duration.ofMinutes(2));
 	}
 
 }

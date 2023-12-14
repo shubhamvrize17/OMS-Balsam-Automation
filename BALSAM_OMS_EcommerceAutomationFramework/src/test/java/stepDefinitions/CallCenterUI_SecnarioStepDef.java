@@ -95,7 +95,6 @@ public class CallCenterUI_SecnarioStepDef extends BasePage {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
 	}
 
 	@When("Select {string} from the charge name dropdown")
@@ -119,7 +118,8 @@ public class CallCenterUI_SecnarioStepDef extends BasePage {
 	}
 
 	@Then("Provide the note in the Note textbox")
-	public void provide_the_note_in_the_note_textbox(List<Map<String, String>> credentials) throws InterruptedException {
+	public void provide_the_note_in_the_note_textbox(List<Map<String, String>> credentials)
+			throws InterruptedException {
 		String Note = credentials.get(0).get("Note");
 		manageCh.enterNoteText(Note);
 	}
@@ -204,6 +204,13 @@ public class CallCenterUI_SecnarioStepDef extends BasePage {
 	@Then("Verify the order should be get cancelled on order summury page")
 	public void verify_the_order_should_be_get_cancelled_on_order_summury_page() {
 		cancelPd.displayCancelProduct();
+	}
+	
+	//Scenario -5partial
+	
+	@When("Click on CheckBox in Partial Cancel product Page")
+	public void click_on_check_box_in_partial_cancel_product_page() {
+		cancelPd.partialselectCheckBtn();
 	}
 
 }

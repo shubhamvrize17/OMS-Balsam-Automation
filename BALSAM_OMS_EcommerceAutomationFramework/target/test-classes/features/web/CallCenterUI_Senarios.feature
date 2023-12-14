@@ -11,7 +11,7 @@ Feature: Call Center Login
     Then The user will be display the home page
     When User enter the <OrderNumber> in order search text box
       | OrderNumber |
-      | Y100037048  |
+      | Y100037626  |
     And Click on  Find order
     Then The order summary page should apper
 
@@ -47,6 +47,17 @@ Feature: Call Center Login
     And Select "Orderedwrongitem" from Reason code dropdown
     And Click on "Select specific lines to cancel" from Choose an option
     And Click on CheckBox in Cancel product Page
+    And Click on the Next button Cancel Product Page
+    And Click Ok button in pop up screen
+    And Click on Confirm button Cancel Product page
+    Then Verify the order should be get cancelled on order summury page
+
+  @PartialCancellation
+  Scenario: Validate the Partial order cancellation from callcenter
+    When Click on cancel product from Releated Task sub window
+    And Select "Orderedwrongitem" from Reason code dropdown
+    And Click on "Select specific lines to cancel" from Choose an option
+    And Click on CheckBox in Partial Cancel product Page
     And Click on the Next button Cancel Product Page
     And Click Ok button in pop up screen
     And Click on Confirm button Cancel Product page

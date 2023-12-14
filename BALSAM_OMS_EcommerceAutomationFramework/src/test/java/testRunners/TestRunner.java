@@ -17,7 +17,7 @@ import io.cucumber.testng.CucumberOptions;
 import utils.BasePage;
 
 @CucumberOptions(features = "src/test/resources/features/web/CallCenterUI_Senarios.feature", glue = {
-		"stepDefinitions" }, tags = "@ManageCharges", plugin = { "pretty", "html:target/cucumber-reports" })
+		"stepDefinitions" }, tags = "@CancelProduct or @PartialCancellation", plugin = { "pretty", "html:target/cucumber-reports" })
 
 public class TestRunner extends AbstractTestNGCucumberTests  {
 

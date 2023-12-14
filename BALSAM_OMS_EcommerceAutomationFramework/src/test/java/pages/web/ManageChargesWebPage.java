@@ -2,6 +2,7 @@ package pages.web;
 
 import java.time.Duration;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -32,16 +33,16 @@ public class ManageChargesWebPage extends BasePage {
 	@FindBy(xpath = "(//a[text() = 'Modify Charges/Discounts'])[1]")
 	private WebElement ModifyCharges_DiscountsLink;
 
-	@FindBy(xpath = "(//div[@uid='cmbChargeCategory']//input)[2]")
+	@FindBy(xpath = "(//div[@uid='cmbChargeCategory']//descendant::input)[6]")
 	private WebElement DiscountRefund;
 
-	@FindBy(xpath = "(//div[@uid=\"cmbChargeName\"]//input)[2]")
+	@FindBy(xpath = "(//div[@uid='cmbChargeName']//descendant::input)[6]")
 	private WebElement Productdiscount;
 
-	@FindBy(xpath = "(//div[@uid=\"cmbApplyTo\"]//input)[2]")
+	@FindBy(xpath = "(//div[@uid='cmbApplyTo']//descendant::input)[6]")
 	private WebElement charge_PerLine;
 
-	@FindBy(xpath = "(//div[@uid = \"txt_chargeAmount\"]//input)[1]")
+	@FindBy(xpath = "(//div[@uid='txt_chargeAmount']//descendant::input)[1]")
 	private WebElement DiscountTextBox;
 
 	@FindBy(id = "(//div[@uid = \"txtNoteText\"]//textarea)")
@@ -65,65 +66,95 @@ public class ManageChargesWebPage extends BasePage {
 	}
 
 	public void clickModifyCharges_DiscountsLink() {
-
 		jsClick(By.linkText("Modify Charges/Discounts"), WaitLogic.CLICKABLE, "ModifyCharges_DiscountsLink");
 	}
 
 	public void enterDiscountRefundValue(String ChargeCategory) {
-		
-//		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(10));
-//		By by = By.xpath("(//div[@uid='cmbChargeCategory']//input)[2]");
-//		wait.until(ExpectedConditions.elementToBeClickable(by));
-//		DiscountRefund.click();
-//		DiscountRefund.sendKeys("Discount/Refund");
-//		DiscountRefund.sendKeys(Keys.ENTER);
-		
+//		try {
+//			By by = By.xpath("(//div[@uid='cmbChargeCategory']//descendant::input)[2]");
+//			DiscountRefund = new WebDriverWait(ldriver, Duration.ofSeconds(5))
+//					.until(ExpectedConditions.elementToBeClickable(by));
+//			DiscountRefund.click();
+//			DiscountRefund.sendKeys("Discount/Refund");
+//			DiscountRefund.sendKeys(Keys.ENTER);
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//		}
 
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(10));
-		By by = By.xpath("(//div[@uid='cmbChargeCategory']//input)[2]");
-		wait.until(ExpectedConditions.elementToBeClickable(by));
-		WebElement element = ldriver.findElement(by);
-		((JavascriptExecutor) ldriver).executeScript("arguments[0].scrollIntoView(true);", element);
-		element.click();
-		element.sendKeys("Discount/Refund");
-		element.sendKeys(Keys.ENTER);
-		
-		// sendKeys(By.xpath("(//div[@uid='cmbChargeCategory']//input)[2]"), "Discount/Refund", WaitLogic.VISIBLE, ChargeCategory);
+		try {
+			// Use WebDriverWait to wait for the presence of the pop-up
+			WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(10));
+			WebElement popup = wait.until(ExpectedConditions
+					.visibilityOfElementLocated(By.xpath("(//div[@uid= 'addModifyChargesPane'])[1]")));
+
+			// Find and interact with the text field
+			WebElement textField = popup
+					.findElement(By.xpath("(//div[@uid='cmbChargeCategory']//descendant::input)[6]"));
+			textField.sendKeys("Discount/Refund");
+			textField.sendKeys(Keys.ENTER);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	public void selectProductDiscount_drpdwn(String productDiscount) {
 
-		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(10));
-		By by = By.xpath("(//div[@uid=\"cmbChargeName\"]//input)[2]");
-		wait.until(ExpectedConditions.elementToBeClickable(by));
-		Productdiscount.click();
-		Productdiscount.clear();
-		Productdiscount.sendKeys("Product discount");
-		Productdiscount.sendKeys(Keys.ENTER);
+		try {
+			// Use WebDriverWait to wait for the presence of the pop-up
+			WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(10));
+			WebElement popup = wait.until(ExpectedConditions
+					.visibilityOfElementLocated(By.xpath("(//div[@uid= 'addModifyChargesPane'])[1]")));
 
+			// Find and interact with the text field
+			WebElement textField = popup.findElement(By.xpath("(//div[@uid='cmbChargeName']//descendant::input)[6]"));
+
+			textField.clear();
+			textField.sendKeys("Product discount");
+			textField.sendKeys(Keys.ENTER);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	public void selectChargeperLine(String chargeperLine) {
 
 		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(10));
-		By by = By.xpath("(//div[@uid=\"cmbApplyTo\"]//input)[2]");
-		wait.until(ExpectedConditions.elementToBeClickable(by));
-		charge_PerLine.click();
-		charge_PerLine.sendKeys("Charge Per Line");
-		charge_PerLine.sendKeys(Keys.ENTER);
+		WebElement popup = wait.until(
+				ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@uid= 'addModifyChargesPane'])[1]")));
+
+		// Find and interact with the text field
+		WebElement textField = popup.findElement(By.xpath("(//div[@uid='cmbApplyTo']//input)[6]"));
+
+		textField.sendKeys("Charge Per Line");
+		textField.sendKeys(Keys.ENTER);
 
 		// sendKeys(By.id("//*[@id=\"idx_form_FilteringSelect_13\"]"), "Charge Per
 		// Line", WaitLogic.VISIBLE, "Apply to:");
 	}
 
 	public void enterDiscountTextBox(String ChargeAmount) {
-		sendKeys(By.xpath("(//div[@uid = \"txt_chargeAmount\"]//input)[1]"), "20", WaitLogic.VISIBLE, ChargeAmount);
+		try {
+			WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(10));
+			By by = By.xpath("(//div[@uid = 'txt_chargeAmount']//input)[1]");
+			wait.until(ExpectedConditions.elementToBeClickable(by));
+			
+			
+			DiscountTextBox.click();
+			DiscountTextBox.sendKeys("20");
+			DiscountTextBox.sendKeys(Keys.ENTER);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		// sendKeys(By.xpath("(//div[@uid = 'txt_chargeAmount']//input)[1]"), "20",
+		// WaitLogic.VISIBLE, ChargeAmount);
 	}
 
 	public void enterNoteText(String Note) throws InterruptedException {
 
 		WebDriverWait wait = new WebDriverWait(ldriver, Duration.ofSeconds(10));
-		By by = By.xpath("(//div[@uid = \"txtNoteText\"]//textarea)");
+		By by = By.xpath("(//div[@uid = 'txtNoteText']//textarea)");
 		wait.until(ExpectedConditions.elementToBeClickable(by));
 		NoteText.click();
 		NoteText.sendKeys("add all details");

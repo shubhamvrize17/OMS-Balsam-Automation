@@ -1,79 +1,177 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-12-12T14:30:44 IST" name="Default suite" finished-at="2023-12-12T14:31:55 IST" duration-ms="70555">
+  <suite started-at="2023-12-14T13:50:50 IST" name="Default suite" finished-at="2023-12-14T13:52:57 IST" duration-ms="127773">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunnerApi@2e1ef60]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunner@6e4566f1]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-12-12T14:30:44 IST" name="Default test" finished-at="2023-12-12T14:31:55 IST" duration-ms="70555">
-      <class name="testRunners.TestRunnerApi">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunners.TestRunnerApi@2e1ef60]" started-at="2023-12-12T14:30:44 IST" name="setUpClass" finished-at="2023-12-12T14:30:45 IST" duration-ms="428" status="PASS">
+    <test started-at="2023-12-14T13:50:50 IST" name="Default test" finished-at="2023-12-14T13:52:57 IST" duration-ms="127773">
+      <class name="testRunners.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunners.TestRunner@6e4566f1]" started-at="2023-12-14T13:50:50 IST" name="setUpClass" finished-at="2023-12-14T13:50:50 IST" duration-ms="490" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@3739f3c9]]>
+                <![CDATA[org.testng.TestRunner@7b1c501d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunnerApi@2e1ef60]" started-at="2023-12-12T14:30:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-12T14:30:53 IST" duration-ms="8076" status="PASS">
+        <test-method is-config="true" signature="SETUP()[pri:0, instance:testRunners.TestRunner@6e4566f1]" started-at="2023-12-14T13:50:50 IST" name="SETUP" finished-at="2023-12-14T13:51:42 IST" duration-ms="51690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SETUP -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunner@6e4566f1]" started-at="2023-12-14T13:51:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-14T13:51:54 IST" duration-ms="12241" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["User generates token for Authorization"]]>
+                <![CDATA["Validate the full order cancellation from call center"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Call Center Api Scenario"]]>
+                <![CDATA["Call Center Login"]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span role="checkbox" class="gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox " aria-checked="false">...</span> is not clickable at point (15, 383). Other element would receive the click: <div class="dijitDialogUnderlay scMask" dojoattachpoint="node" role="alert" id="dialogId_underlay" style="width: 1263px; height: 551px; text-align: center;"></div>
+  (Session info: chrome=120.0.6099.71)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'SHUBHAMMALVIYA', ip: '192.168.29.61', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [49aa5122bd2a4e05c5f74827269aea6a, clickElement {id=68027BC6423CB8F4125F684B5FE9F810_element_79}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54054}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54054/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (49aa5122bd2a4e05c5f74827269aea6a)] -> xpath: (//div[@uid='OLST_listGrid']/descendant::span[@class= 'gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox '])[2]]
+Session ID: 49aa5122bd2a4e05c5f74827269aea6a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span role="checkbox" class="gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox " aria-checked="false">...</span> is not clickable at point (15, 383). Other element would receive the click: <div class="dijitDialogUnderlay scMask" dojoattachpoint="node" role="alert" id="dialogId_underlay" style="width: 1263px; height: 551px; text-align: center;"></div>
+  (Session info: chrome=120.0.6099.71)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'SHUBHAMMALVIYA', ip: '192.168.29.61', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [49aa5122bd2a4e05c5f74827269aea6a, clickElement {id=68027BC6423CB8F4125F684B5FE9F810_element_79}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54054}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54054/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (49aa5122bd2a4e05c5f74827269aea6a)] -> xpath: (//div[@uid='OLST_listGrid']/descendant::span[@class= 'gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox '])[2]]
+Session ID: 49aa5122bd2a4e05c5f74827269aea6a
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
+at utils.BasePage.click(BasePage.java:58)
+at pages.web.CancelProductWebPage.selectCheckBtn(CancelProductWebPage.java:83)
+at stepDefinitions.CallCenterUI_SecnarioStepDef.click_on_check_box_in_cancel_product_page(CallCenterUI_SecnarioStepDef.java:186)
+at ✽.Click on CheckBox in Cancel product Page(file:///C:/Shubham/OMS-Balsam-Automation/BALSAM_OMS_EcommerceAutomationFramework/src/test/resources/features/web/CallCenterUI_Senarios.feature:49)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunnerApi@2e1ef60]" started-at="2023-12-12T14:30:53 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-12T14:31:13 IST" duration-ms="19959" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testRunners.TestRunner@6e4566f1]" started-at="2023-12-14T13:51:54 IST" name="teardown" finished-at="2023-12-14T13:51:54 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="SETUP()[pri:0, instance:testRunners.TestRunner@6e4566f1]" started-at="2023-12-14T13:51:54 IST" name="SETUP" finished-at="2023-12-14T13:52:43 IST" duration-ms="49272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SETUP -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunner@6e4566f1]" started-at="2023-12-14T13:52:43 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-14T13:52:57 IST" duration-ms="13872" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify if order Creation is succesfully using createorderAPI"]]>
+                <![CDATA["Validate the Partial order cancellation from callcenter"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Call Center Api Scenario"]]>
+                <![CDATA["Call Center Login"]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span role="checkbox" class="gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox " aria-checked="false">...</span> is not clickable at point (15, 430). Other element would receive the click: <div class="dijitDialogUnderlay scMask" dojoattachpoint="node" role="alert" id="dialogId_underlay" style="width: 1263px; height: 551px; text-align: center;"></div>
+  (Session info: chrome=120.0.6099.71)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'SHUBHAMMALVIYA', ip: '192.168.29.61', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b2ff93791c3d61bd70f7577d8b4106f7, clickElement {id=5A6CBA57B8EB8800C9F892587AC5D0AE_element_80}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54130}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54130/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b2ff93791c3d61bd70f7577d8b4106f7)] -> xpath: (//div[@uid='OLST_listGrid']/descendant::span[@class= 'gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox '])[3]]
+Session ID: b2ff93791c3d61bd70f7577d8b4106f7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span role="checkbox" class="gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox " aria-checked="false">...</span> is not clickable at point (15, 430). Other element would receive the click: <div class="dijitDialogUnderlay scMask" dojoattachpoint="node" role="alert" id="dialogId_underlay" style="width: 1263px; height: 551px; text-align: center;"></div>
+  (Session info: chrome=120.0.6099.71)
+Build info: version: '4.4.0', revision: 'e5c75ed026a'
+System info: host: 'SHUBHAMMALVIYA', ip: '192.168.29.61', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b2ff93791c3d61bd70f7577d8b4106f7, clickElement {id=5A6CBA57B8EB8800C9F892587AC5D0AE_element_80}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54130}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54130/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (b2ff93791c3d61bd70f7577d8b4106f7)] -> xpath: (//div[@uid='OLST_listGrid']/descendant::span[@class= 'gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox '])[3]]
+Session ID: b2ff93791c3d61bd70f7577d8b4106f7
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
+at utils.BasePage.click(BasePage.java:58)
+at pages.web.CancelProductWebPage.partialselectCheckBtn(CancelProductWebPage.java:90)
+at stepDefinitions.CallCenterUI_SecnarioStepDef.click_on_check_box_in_partial_cancel_product_page(CallCenterUI_SecnarioStepDef.java:213)
+at ✽.Click on CheckBox in Partial Cancel product Page(file:///C:/Shubham/OMS-Balsam-Automation/BALSAM_OMS_EcommerceAutomationFramework/src/test/resources/features/web/CallCenterUI_Senarios.feature:60)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunners.TestRunnerApi@2e1ef60]" started-at="2023-12-12T14:31:13 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-12-12T14:31:55 IST" duration-ms="41914" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify if shipment creation is succesfully using createshipmentAPI"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Call Center Api Scenario"]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testRunners.TestRunner@6e4566f1]" started-at="2023-12-14T13:52:57 IST" name="teardown" finished-at="2023-12-14T13:52:57 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.TestRunnerApi@2e1ef60]" started-at="2023-12-12T14:31:55 IST" name="tearDownClass" finished-at="2023-12-12T14:31:55 IST" duration-ms="66" status="PASS">
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunners.TestRunner@6e4566f1]" started-at="2023-12-14T13:52:57 IST" name="tearDownClass" finished-at="2023-12-14T13:52:57 IST" duration-ms="53" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- testRunners.TestRunnerApi -->
+      </class> <!-- testRunners.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
