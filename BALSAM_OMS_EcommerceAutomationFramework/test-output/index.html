@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\ShubhamMalviya\AppData\Local\Temp\testng-eclipse-1697778228\testng-customsuite.xml</span>
+                    <span>C:\Users\ShubhamMalviya\AppData\Local\Temp\testng-eclipse-55324208\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">4 methods, 3 failed,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,15 +103,34 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate the full order cancellation from call center&quot;, &quot;Call Center Login&quot;)">runScenario("Validate the full order cancellation from call center", "Call Center Login")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testRunners.TestRunnerUi" class="method navigator-link" hash-for-method="runScenario(&quot;Validate the Partial order cancellation from callcenter&quot;, &quot;Call Center Login&quot;)">runScenario("Validate the Partial order cancellation from callcenter", "Call Center Login")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testRunners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Validate the Partial order cancellation from callcenter&quot;, &quot;Call Center Login&quot;)">runScenario("Validate the Partial order cancellation from callcenter", "Call Center Login")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testRunners.TestRunnerUi" class="method navigator-link" hash-for-method="runScenario(&quot;Validate the full order cancellation from call center&quot;, &quot;Call Center Login&quot;)">runScenario("Validate the full order cancellation from call center", "Call Center Login")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testRunners.TestRunnerUi" class="method navigator-link" hash-for-method="runScenario(&quot;Validate applying header level discount in callcenter&quot;, &quot;Call Center Login&quot;)">runScenario("Validate applying header level discount in callcenter", "Call Center Login")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testRunners.TestRunnerUi" class="method navigator-link" hash-for-method="runScenario(&quot;Validate the Manage Gift Option from callcenter&quot;, &quot;Call Center Login&quot;)">runScenario("Validate the Manage Gift Option from callcenter", "Call Center Login")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -126,24 +145,24 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testRunners.TestRunner</span>
+              <span class="class-name">testRunners.TestRunnerUi</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Validate the full order cancellation from call center&quot;, &quot;Call Center Login&quot;)">
-                  </a> <!-- runScenario("Validate the full order cancellation from call center", "Call Center Login") -->
+                  <a name="runScenario(&quot;Validate the Partial order cancellation from callcenter&quot;, &quot;Call Center Login&quot;)">
+                  </a> <!-- runScenario("Validate the Partial order cancellation from callcenter", "Call Center Login") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Validate the full order cancellation from call center","Call Center Login")</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span role=&quot;checkbox&quot; class=&quot;gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox &quot; aria-checked=&quot;false&quot;&gt;...&lt;/span&gt; is not clickable at point (15, 383). Other element would receive the click: &lt;div class=&quot;dijitDialogUnderlay scMask&quot; dojoattachpoint=&quot;node&quot; role=&quot;alert&quot; id=&quot;dialogId_underlay&quot; style=&quot;width: 1263px; height: 551px; text-align: center;&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=120.0.6099.71)
+                  <span class="parameters">("Validate the Partial order cancellation from callcenter","Call Center Login")</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span role=&quot;checkbox&quot; class=&quot;gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox &quot; aria-checked=&quot;false&quot;&gt;...&lt;/span&gt; is not clickable at point (15, 430). Other element would receive the click: &lt;div class=&quot;dijitDialogUnderlay scMask&quot; dojoattachpoint=&quot;node&quot; role=&quot;alert&quot; id=&quot;dialogId_underlay&quot; style=&quot;width: 1263px; height: 551px; text-align: center;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=120.0.6099.109)
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;SHUBHAMMALVIYA&apos;, ip: &apos;192.168.29.61&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [49aa5122bd2a4e05c5f74827269aea6a, clickElement {id=68027BC6423CB8F4125F684B5FE9F810_element_79}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54054}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54054/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (49aa5122bd2a4e05c5f74827269aea6a)] -&gt; xpath: (//div[@uid=&apos;OLST_listGrid&apos;]/descendant::span[@class= &apos;gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox &apos;])[2]]
-Session ID: 49aa5122bd2a4e05c5f74827269aea6a
+Command: [a91f2f5ffd10b93b3fd64e715b1b3f4f, clickElement {id=D0BE7A5FEBFB17D4ED4C1C8274B6E409_element_79}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59575}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59575/devtoo..., se:cdpVersion: 120.0.6099.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a91f2f5ffd10b93b3fd64e715b1b3f4f)] -&gt; xpath: (//div[@uid=&apos;OLST_listGrid&apos;]/descendant::span[@class= &apos;gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox &apos;])[3]]
+Session ID: a91f2f5ffd10b93b3fd64e715b1b3f4f
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -165,9 +184,9 @@ Session ID: 49aa5122bd2a4e05c5f74827269aea6a
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
 	at utils.BasePage.click(BasePage.java:58)
-	at pages.web.CancelProductWebPage.selectCheckBtn(CancelProductWebPage.java:83)
-	at stepDefinitions.CallCenterUI_SecnarioStepDef.click_on_check_box_in_cancel_product_page(CallCenterUI_SecnarioStepDef.java:186)
-	at ✽.Click on CheckBox in Cancel product Page(file:///C:/Shubham/OMS-Balsam-Automation/BALSAM_OMS_EcommerceAutomationFramework/src/test/resources/features/web/CallCenterUI_Senarios.feature:49)
+	at pages.web.CancelProductWebPage.partialselectCheckBtn(CancelProductWebPage.java:89)
+	at stepDefinitions.CallCenterUI_SecnarioStepDef.click_on_check_box_in_partial_cancel_product_page(CallCenterUI_SecnarioStepDef.java:186)
+	at ✽.Click on CheckBox in Partial Cancel product Page(file:///C:/Shubham/OMS-Balsam-Automation/BALSAM_OMS_EcommerceAutomationFramework/src/test/resources/features/web/CallCenterUI_Senarios.feature:49)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -176,19 +195,19 @@ Session ID: 49aa5122bd2a4e05c5f74827269aea6a
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Validate the Partial order cancellation from callcenter&quot;, &quot;Call Center Login&quot;)">
-                  </a> <!-- runScenario("Validate the Partial order cancellation from callcenter", "Call Center Login") -->
+                  <a name="runScenario(&quot;Validate the full order cancellation from call center&quot;, &quot;Call Center Login&quot;)">
+                  </a> <!-- runScenario("Validate the full order cancellation from call center", "Call Center Login") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Validate the Partial order cancellation from callcenter","Call Center Login")</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span role=&quot;checkbox&quot; class=&quot;gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox &quot; aria-checked=&quot;false&quot;&gt;...&lt;/span&gt; is not clickable at point (15, 430). Other element would receive the click: &lt;div class=&quot;dijitDialogUnderlay scMask&quot; dojoattachpoint=&quot;node&quot; role=&quot;alert&quot; id=&quot;dialogId_underlay&quot; style=&quot;width: 1263px; height: 551px; text-align: center;&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=120.0.6099.71)
+                  <span class="parameters">("Validate the full order cancellation from call center","Call Center Login")</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span role=&quot;checkbox&quot; class=&quot;gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox &quot; aria-checked=&quot;false&quot;&gt;...&lt;/span&gt; is not clickable at point (15, 383). Other element would receive the click: &lt;div class=&quot;dijitDialogUnderlay scMask&quot; dojoattachpoint=&quot;node&quot; role=&quot;alert&quot; id=&quot;dialogId_underlay&quot; style=&quot;width: 1263px; height: 551px; text-align: center;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=120.0.6099.109)
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;SHUBHAMMALVIYA&apos;, ip: &apos;192.168.29.61&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b2ff93791c3d61bd70f7577d8b4106f7, clickElement {id=5A6CBA57B8EB8800C9F892587AC5D0AE_element_80}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54130}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54130/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (b2ff93791c3d61bd70f7577d8b4106f7)] -&gt; xpath: (//div[@uid=&apos;OLST_listGrid&apos;]/descendant::span[@class= &apos;gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox &apos;])[3]]
-Session ID: b2ff93791c3d61bd70f7577d8b4106f7
+Command: [1308f33777e255bb8bbf088dc27697a9, clickElement {id=C3251CD54739BAFC0645E0BF5AC6FB86_element_80}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59616}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59616/devtoo..., se:cdpVersion: 120.0.6099.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1308f33777e255bb8bbf088dc27697a9)] -&gt; xpath: (//div[@uid=&apos;OLST_listGrid&apos;]/descendant::span[@class= &apos;gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox &apos;])[2]]
+Session ID: 1308f33777e255bb8bbf088dc27697a9
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -210,9 +229,54 @@ Session ID: b2ff93791c3d61bd70f7577d8b4106f7
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
 	at utils.BasePage.click(BasePage.java:58)
-	at pages.web.CancelProductWebPage.partialselectCheckBtn(CancelProductWebPage.java:90)
-	at stepDefinitions.CallCenterUI_SecnarioStepDef.click_on_check_box_in_partial_cancel_product_page(CallCenterUI_SecnarioStepDef.java:213)
-	at ✽.Click on CheckBox in Partial Cancel product Page(file:///C:/Shubham/OMS-Balsam-Automation/BALSAM_OMS_EcommerceAutomationFramework/src/test/resources/features/web/CallCenterUI_Senarios.feature:60)
+	at pages.web.CancelProductWebPage.selectCheckBtn(CancelProductWebPage.java:82)
+	at stepDefinitions.CallCenterUI_SecnarioStepDef.click_on_check_box_in_cancel_product_page(CallCenterUI_SecnarioStepDef.java:212)
+	at ✽.Click on CheckBox in Cancel product Page(file:///C:/Shubham/OMS-Balsam-Automation/BALSAM_OMS_EcommerceAutomationFramework/src/test/resources/features/web/CallCenterUI_Senarios.feature:60)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate applying header level discount in callcenter&quot;, &quot;Call Center Login&quot;)">
+                  </a> <!-- runScenario("Validate applying header level discount in callcenter", "Call Center Login") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate applying header level discount in callcenter","Call Center Login")</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;idxLink idxLinkDerived&quot; dojoattachpoint=&quot;containerNode, linkNode, focusNode, stateNode, oneuiBaseNode&quot; tabindex=&quot;0&quot; alt=&quot;&quot; role=&quot;link&quot; wairole=&quot;link&quot; aria-label=&quot;&quot; href=&quot;javascript:;&quot;&gt;...&lt;/a&gt; is not clickable at point (1075, 475). Other element would receive the click: &lt;div class=&quot;dijitDialogUnderlay scMask&quot; dojoattachpoint=&quot;node&quot; role=&quot;alert&quot; id=&quot;dialogId_underlay&quot; style=&quot;width: 1263px; height: 551px; text-align: center;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=120.0.6099.109)
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;SHUBHAMMALVIYA&apos;, ip: &apos;192.168.29.61&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3e15176099d0f7dc99b28701fcac42e0, clickElement {id=74E132D8A2712235EEC4E0E82882B26D_element_65}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59543}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59543/devtoo..., se:cdpVersion: 120.0.6099.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (3e15176099d0f7dc99b28701fcac42e0)] -&gt; link text: Manage Charges]
+Session ID: 3e15176099d0f7dc99b28701fcac42e0
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
+	at utils.BasePage.click(BasePage.java:58)
+	at pages.web.ManageChargesWebPage.clickManageChargesLink(ManageChargesWebPage.java:64)
+	at stepDefinitions.CallCenterUI_SecnarioStepDef.click_on_from_releated_task_sub_window(CallCenterUI_SecnarioStepDef.java:82)
+	at ✽.Click on &quot;ManageCharges&quot; from Releated Task sub window(file:///C:/Shubham/OMS-Balsam-Automation/BALSAM_OMS_EcommerceAutomationFramework/src/test/resources/features/web/CallCenterUI_Senarios.feature:26)
 
 </div> <!-- stack-trace -->
                   <em>
@@ -221,10 +285,28 @@ Session ID: b2ff93791c3d61bd70f7577d8b4106f7
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testRunners.TestRunnerUi</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Validate the Manage Gift Option from callcenter&quot;, &quot;Call Center Login&quot;)">
+                  </a> <!-- runScenario("Validate the Manage Gift Option from callcenter", "Call Center Login") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Validate the Manage Gift Option from callcenter","Call Center Login")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ShubhamMalviya\AppData\Local\Temp\testng-eclipse-1697778228\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ShubhamMalviya\AppData\Local\Temp\testng-eclipse-55324208\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -233,7 +315,7 @@ Session ID: b2ff93791c3d61bd70f7577d8b4106f7
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testRunners.TestRunner&quot;/&gt;
+      &lt;class name=&quot;testRunners.TestRunnerUi&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -281,20 +363,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
-data.setCell(0, 2, 'testRunners.TestRunner')
-data.setCell(0, 3, 13872);
+data.setCell(0, 2, 'testRunners.TestRunnerUi')
+data.setCell(0, 3, 13267);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
-data.setCell(1, 2, 'testRunners.TestRunner')
-data.setCell(1, 3, 12241);
+data.setCell(1, 2, 'testRunners.TestRunnerUi')
+data.setCell(1, 3, 11809);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'testRunners.TestRunnerUi')
+data.setCell(2, 3, 11566);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'testRunners.TestRunnerUi')
+data.setCell(3, 3, 11460);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <span class="suite-total-time">Total running time: 48 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -320,42 +410,68 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testRunners.TestRunner</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testRunners.TestRunnerUi</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@7b1c501d)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@104bc677)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">SETUP</span>
-                <span class="method-start">506 ms</span>
+                <span class="method-start">484 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Validate the Manage Gift Option from callcenter", "Call Center Login")</span>
+                <span class="method-start">93630 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">105227 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SETUP</span>
+                <span class="method-start">105243 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">runScenario("Validate the full order cancellation from call center", "Call Center Login")</span>
-                <span class="method-start">52236 ms</span>
+                <span class="method-name">runScenario("Validate applying header level discount in callcenter", "Call Center Login")</span>
+                <span class="method-start">153393 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">64487 ms</span>
+                <span class="method-start">164876 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">SETUP</span>
-                <span class="method-start">64494 ms</span>
+                <span class="method-start">164889 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Validate the Partial order cancellation from callcenter", "Call Center Login")</span>
-                <span class="method-start">113770 ms</span>
+                <span class="method-start">214299 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">127663 ms</span>
+                <span class="method-start">227591 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SETUP</span>
+                <span class="method-start">227602 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Validate the full order cancellation from call center", "Call Center Login")</span>
+                <span class="method-start">276495 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">288325 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">127680 ms</span>
+                <span class="method-start">288340 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

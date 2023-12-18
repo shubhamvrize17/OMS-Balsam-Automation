@@ -1,4 +1,4 @@
-@CallCenter_UiScenario
+@CallCenterUI_Senarios
 Feature: Call Center Login
 
   Background: Comman Steps for All Scenarios
@@ -11,9 +11,15 @@ Feature: Call Center Login
     Then The user will be display the home page
     When User enter the <OrderNumber> in order search text box
       | OrderNumber |
-      | Y100037626  |
+      | Y100037824  |
     And Click on  Find order
     Then The order summary page should apper
+
+  @ManageGiftOptions
+  Scenario: Validate the Manage Gift Option from callcenter
+    When Click on Manage Gift Option from Releated Task sub window
+    Then Click on Next button Manage Gift option page
+    Then It display the Manage Gift option
 
   @ManageCharges
   Scenario: Validate applying header level discount in callcenter
@@ -35,11 +41,16 @@ Feature: Call Center Login
     And Click on Confirm button Manage Charges Page
     Then The total amount will be reflected according to discount amount in order Summary screen
 
-  @ManageGiftOptions
-  Scenario: Validate the Manage Gift Option from callcenter
-    When Click on Manage Gift Option from Releated Task sub window
-    Then Click on Next button Manage Gift option page
-    Then It display the Manage Gift option
+  @PartialCancellation
+  Scenario: Validate the Partial order cancellation from callcenter
+    When Click on cancel product from Releated Task sub window
+    And Select "Orderedwrongitem" from Reason code dropdown
+    And Click on "Select specific lines to cancel" from Choose an option
+    And Click on CheckBox in Partial Cancel product Page
+    And Click on the Next button Cancel Product Page
+    And Click Ok button in pop up screen
+    And Click on Confirm button Cancel Product page
+    Then Verify the order should be get partial cancelled on order summury page
 
   @CancelProduct
   Scenario: Validate the full order cancellation from call center
@@ -47,17 +58,6 @@ Feature: Call Center Login
     And Select "Orderedwrongitem" from Reason code dropdown
     And Click on "Select specific lines to cancel" from Choose an option
     And Click on CheckBox in Cancel product Page
-    And Click on the Next button Cancel Product Page
-    And Click Ok button in pop up screen
-    And Click on Confirm button Cancel Product page
-    Then Verify the order should be get cancelled on order summury page
-
-  @PartialCancellation
-  Scenario: Validate the Partial order cancellation from callcenter
-    When Click on cancel product from Releated Task sub window
-    And Select "Orderedwrongitem" from Reason code dropdown
-    And Click on "Select specific lines to cancel" from Choose an option
-    And Click on CheckBox in Partial Cancel product Page
     And Click on the Next button Cancel Product Page
     And Click Ok button in pop up screen
     And Click on Confirm button Cancel Product page

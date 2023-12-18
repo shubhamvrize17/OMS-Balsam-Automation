@@ -2,7 +2,7 @@ package stepDefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
-import testRunners.TestRunner;
+import testRunners.TestRunnerUi;
 import io.cucumber.java.en.Then;
 
 import java.net.MalformedURLException;

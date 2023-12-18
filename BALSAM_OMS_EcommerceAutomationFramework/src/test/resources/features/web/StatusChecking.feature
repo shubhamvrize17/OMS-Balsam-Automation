@@ -11,7 +11,7 @@ Feature: statuschecking
     Then User will be display the home page
     When User enter the <OrderNumber> in the order search text box for status checking page
       | OrderNumber |
-      | Y100037047  |
+      | Y100037824  |
     And Click on the Find order
 
   @CreatedStatus

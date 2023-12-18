@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Dec 14 13:50:50 IST 2023</td>
+<td>Started on:</td><td>Fri Dec 15 17:34:19 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>127 seconds (127773 ms)</td>
+<tr><td>Total time:</td><td>288 seconds (288406 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,88 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testRunners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the full order cancellation from call center", "Call Center Login"</td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span role=&quot;checkbox&quot; class=&quot;gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox &quot; aria-checked=&quot;false&quot;&gt;...&lt;/span&gt; is not clickable at point (15, 383). Other element would receive the click: &lt;div class=&quot;dijitDialogUnderlay scMask&quot; dojoattachpoint=&quot;node&quot; role=&quot;alert&quot; id=&quot;dialogId_underlay&quot; style=&quot;width: 1263px; height: 551px; text-align: center;&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=120.0.6099.71)
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;SHUBHAMMALVIYA&apos;, ip: &apos;192.168.29.61&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [49aa5122bd2a4e05c5f74827269aea6a, clickElement {id=68027BC6423CB8F4125F684B5FE9F810_element_79}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54054}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54054/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (49aa5122bd2a4e05c5f74827269aea6a)] -&gt; xpath: (//div[@uid=&apos;OLST_listGrid&apos;]/descendant::span[@class= &apos;gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox &apos;])[2]]
-Session ID: 49aa5122bd2a4e05c5f74827269aea6a
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
-	at utils.BasePage.click(BasePage.java:58)
-	at pages.web.CancelProductWebPage.selectCheckBtn(CancelProductWebPage.java:83)
-	at stepDefinitions.CallCenterUI_SecnarioStepDef.click_on_check_box_in_cancel_product_page(CallCenterUI_SecnarioStepDef.java:186)
-	at ✽.Click on CheckBox in Cancel product Page(file:///C:/Shubham/OMS-Balsam-Automation/BALSAM_OMS_EcommerceAutomationFramework/src/test/resources/features/web/CallCenterUI_Senarios.feature:49)
-</pre></div><a href='#' onClick='toggleBox("stack-trace35539019", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace35539019'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span role=&quot;checkbox&quot; class=&quot;gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox &quot; aria-checked=&quot;false&quot;&gt;...&lt;/span&gt; is not clickable at point (15, 383). Other element would receive the click: &lt;div class=&quot;dijitDialogUnderlay scMask&quot; dojoattachpoint=&quot;node&quot; role=&quot;alert&quot; id=&quot;dialogId_underlay&quot; style=&quot;width: 1263px; height: 551px; text-align: center;&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=120.0.6099.71)
-Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
-System info: host: &apos;SHUBHAMMALVIYA&apos;, ip: &apos;192.168.29.61&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [49aa5122bd2a4e05c5f74827269aea6a, clickElement {id=68027BC6423CB8F4125F684B5FE9F810_element_79}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54054}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54054/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (49aa5122bd2a4e05c5f74827269aea6a)] -&gt; xpath: (//div[@uid=&apos;OLST_listGrid&apos;]/descendant::span[@class= &apos;gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox &apos;])[2]]
-Session ID: 49aa5122bd2a4e05c5f74827269aea6a
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
-	at utils.BasePage.click(BasePage.java:58)
-	at pages.web.CancelProductWebPage.selectCheckBtn(CancelProductWebPage.java:83)
-	at stepDefinitions.CallCenterUI_SecnarioStepDef.click_on_check_box_in_cancel_product_page(CallCenterUI_SecnarioStepDef.java:186)
-	at ✽.Click on CheckBox in Cancel product Page(file:///C:/Shubham/OMS-Balsam-Automation/BALSAM_OMS_EcommerceAutomationFramework/src/test/resources/features/web/CallCenterUI_Senarios.feature:49)
-</pre></div></td>
-<td>12</td>
-<td>testRunners.TestRunner@6e4566f1</td></tr>
-<tr>
-<td title='testRunners.TestRunner.runScenario()'><b>runScenario</b><br>Test class: testRunners.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Partial order cancellation from callcenter", "Call Center Login"</td>
+<td title='testRunners.TestRunnerUi.runScenario()'><b>runScenario</b><br>Test class: testRunners.TestRunnerUi<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Partial order cancellation from callcenter", "Call Center Login"</td>
 <td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span role=&quot;checkbox&quot; class=&quot;gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox &quot; aria-checked=&quot;false&quot;&gt;...&lt;/span&gt; is not clickable at point (15, 430). Other element would receive the click: &lt;div class=&quot;dijitDialogUnderlay scMask&quot; dojoattachpoint=&quot;node&quot; role=&quot;alert&quot; id=&quot;dialogId_underlay&quot; style=&quot;width: 1263px; height: 551px; text-align: center;&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=120.0.6099.71)
+  (Session info: chrome=120.0.6099.109)
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;SHUBHAMMALVIYA&apos;, ip: &apos;192.168.29.61&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b2ff93791c3d61bd70f7577d8b4106f7, clickElement {id=5A6CBA57B8EB8800C9F892587AC5D0AE_element_80}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54130}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54130/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (b2ff93791c3d61bd70f7577d8b4106f7)] -&gt; xpath: (//div[@uid=&apos;OLST_listGrid&apos;]/descendant::span[@class= &apos;gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox &apos;])[3]]
-Session ID: b2ff93791c3d61bd70f7577d8b4106f7
+Command: [a91f2f5ffd10b93b3fd64e715b1b3f4f, clickElement {id=D0BE7A5FEBFB17D4ED4C1C8274B6E409_element_79}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59575}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59575/devtoo..., se:cdpVersion: 120.0.6099.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a91f2f5ffd10b93b3fd64e715b1b3f4f)] -&gt; xpath: (//div[@uid=&apos;OLST_listGrid&apos;]/descendant::span[@class= &apos;gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox &apos;])[3]]
+Session ID: a91f2f5ffd10b93b3fd64e715b1b3f4f
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -179,19 +107,19 @@ Session ID: b2ff93791c3d61bd70f7577d8b4106f7
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
 	at utils.BasePage.click(BasePage.java:58)
-	at pages.web.CancelProductWebPage.partialselectCheckBtn(CancelProductWebPage.java:90)
-	at stepDefinitions.CallCenterUI_SecnarioStepDef.click_on_check_box_in_partial_cancel_product_page(CallCenterUI_SecnarioStepDef.java:213)
-	at ✽.Click on CheckBox in Partial Cancel product Page(file:///C:/Shubham/OMS-Balsam-Automation/BALSAM_OMS_EcommerceAutomationFramework/src/test/resources/features/web/CallCenterUI_Senarios.feature:60)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1343145833", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1343145833'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span role=&quot;checkbox&quot; class=&quot;gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox &quot; aria-checked=&quot;false&quot;&gt;...&lt;/span&gt; is not clickable at point (15, 430). Other element would receive the click: &lt;div class=&quot;dijitDialogUnderlay scMask&quot; dojoattachpoint=&quot;node&quot; role=&quot;alert&quot; id=&quot;dialogId_underlay&quot; style=&quot;width: 1263px; height: 551px; text-align: center;&quot;&gt;&lt;/div&gt;
-  (Session info: chrome=120.0.6099.71)
+	at pages.web.CancelProductWebPage.partialselectCheckBtn(CancelProductWebPage.java:89)
+	at stepDefinitions.CallCenterUI_SecnarioStepDef.click_on_check_box_in_partial_cancel_product_page(CallCenterUI_SecnarioStepDef.java:186)
+	at ✽.Click on CheckBox in Partial Cancel product Page(file:///C:/Shubham/OMS-Balsam-Automation/BALSAM_OMS_EcommerceAutomationFramework/src/test/resources/features/web/CallCenterUI_Senarios.feature:49)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1978560393", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1978560393'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span role=&quot;checkbox&quot; class=&quot;gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox &quot; aria-checked=&quot;false&quot;&gt;...&lt;/span&gt; is not clickable at point (15, 430). Other element would receive the click: &lt;div class=&quot;dijitDialogUnderlay scMask&quot; dojoattachpoint=&quot;node&quot; role=&quot;alert&quot; id=&quot;dialogId_underlay&quot; style=&quot;width: 1263px; height: 551px; text-align: center;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=120.0.6099.109)
 Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
 System info: host: &apos;SHUBHAMMALVIYA&apos;, ip: &apos;192.168.29.61&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b2ff93791c3d61bd70f7577d8b4106f7, clickElement {id=5A6CBA57B8EB8800C9F892587AC5D0AE_element_80}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.71, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54130}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54130/devtoo..., se:cdpVersion: 120.0.6099.71, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (b2ff93791c3d61bd70f7577d8b4106f7)] -&gt; xpath: (//div[@uid=&apos;OLST_listGrid&apos;]/descendant::span[@class= &apos;gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox &apos;])[3]]
-Session ID: b2ff93791c3d61bd70f7577d8b4106f7
+Command: [a91f2f5ffd10b93b3fd64e715b1b3f4f, clickElement {id=D0BE7A5FEBFB17D4ED4C1C8274B6E409_element_79}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59575}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59575/devtoo..., se:cdpVersion: 120.0.6099.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (a91f2f5ffd10b93b3fd64e715b1b3f4f)] -&gt; xpath: (//div[@uid=&apos;OLST_listGrid&apos;]/descendant::span[@class= &apos;gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox &apos;])[3]]
+Session ID: a91f2f5ffd10b93b3fd64e715b1b3f4f
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -213,12 +141,170 @@ Session ID: b2ff93791c3d61bd70f7577d8b4106f7
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
 	at utils.BasePage.click(BasePage.java:58)
-	at pages.web.CancelProductWebPage.partialselectCheckBtn(CancelProductWebPage.java:90)
-	at stepDefinitions.CallCenterUI_SecnarioStepDef.click_on_check_box_in_partial_cancel_product_page(CallCenterUI_SecnarioStepDef.java:213)
-	at ✽.Click on CheckBox in Partial Cancel product Page(file:///C:/Shubham/OMS-Balsam-Automation/BALSAM_OMS_EcommerceAutomationFramework/src/test/resources/features/web/CallCenterUI_Senarios.feature:60)
+	at pages.web.CancelProductWebPage.partialselectCheckBtn(CancelProductWebPage.java:89)
+	at stepDefinitions.CallCenterUI_SecnarioStepDef.click_on_check_box_in_partial_cancel_product_page(CallCenterUI_SecnarioStepDef.java:186)
+	at ✽.Click on CheckBox in Partial Cancel product Page(file:///C:/Shubham/OMS-Balsam-Automation/BALSAM_OMS_EcommerceAutomationFramework/src/test/resources/features/web/CallCenterUI_Senarios.feature:49)
 </pre></div></td>
 <td>13</td>
-<td>testRunners.TestRunner@6e4566f1</td></tr>
+<td>testRunners.TestRunnerUi@6e4566f1</td></tr>
+<tr>
+<td title='testRunners.TestRunnerUi.runScenario()'><b>runScenario</b><br>Test class: testRunners.TestRunnerUi<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the full order cancellation from call center", "Call Center Login"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span role=&quot;checkbox&quot; class=&quot;gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox &quot; aria-checked=&quot;false&quot;&gt;...&lt;/span&gt; is not clickable at point (15, 383). Other element would receive the click: &lt;div class=&quot;dijitDialogUnderlay scMask&quot; dojoattachpoint=&quot;node&quot; role=&quot;alert&quot; id=&quot;dialogId_underlay&quot; style=&quot;width: 1263px; height: 551px; text-align: center;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=120.0.6099.109)
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;SHUBHAMMALVIYA&apos;, ip: &apos;192.168.29.61&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1308f33777e255bb8bbf088dc27697a9, clickElement {id=C3251CD54739BAFC0645E0BF5AC6FB86_element_80}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59616}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59616/devtoo..., se:cdpVersion: 120.0.6099.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1308f33777e255bb8bbf088dc27697a9)] -&gt; xpath: (//div[@uid=&apos;OLST_listGrid&apos;]/descendant::span[@class= &apos;gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox &apos;])[2]]
+Session ID: 1308f33777e255bb8bbf088dc27697a9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
+	at utils.BasePage.click(BasePage.java:58)
+	at pages.web.CancelProductWebPage.selectCheckBtn(CancelProductWebPage.java:82)
+	at stepDefinitions.CallCenterUI_SecnarioStepDef.click_on_check_box_in_cancel_product_page(CallCenterUI_SecnarioStepDef.java:212)
+	at ✽.Click on CheckBox in Cancel product Page(file:///C:/Shubham/OMS-Balsam-Automation/BALSAM_OMS_EcommerceAutomationFramework/src/test/resources/features/web/CallCenterUI_Senarios.feature:60)
+</pre></div><a href='#' onClick='toggleBox("stack-trace758057380", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace758057380'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span role=&quot;checkbox&quot; class=&quot;gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox &quot; aria-checked=&quot;false&quot;&gt;...&lt;/span&gt; is not clickable at point (15, 383). Other element would receive the click: &lt;div class=&quot;dijitDialogUnderlay scMask&quot; dojoattachpoint=&quot;node&quot; role=&quot;alert&quot; id=&quot;dialogId_underlay&quot; style=&quot;width: 1263px; height: 551px; text-align: center;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=120.0.6099.109)
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;SHUBHAMMALVIYA&apos;, ip: &apos;192.168.29.61&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1308f33777e255bb8bbf088dc27697a9, clickElement {id=C3251CD54739BAFC0645E0BF5AC6FB86_element_80}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59616}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59616/devtoo..., se:cdpVersion: 120.0.6099.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (1308f33777e255bb8bbf088dc27697a9)] -&gt; xpath: (//div[@uid=&apos;OLST_listGrid&apos;]/descendant::span[@class= &apos;gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox &apos;])[2]]
+Session ID: 1308f33777e255bb8bbf088dc27697a9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
+	at utils.BasePage.click(BasePage.java:58)
+	at pages.web.CancelProductWebPage.selectCheckBtn(CancelProductWebPage.java:82)
+	at stepDefinitions.CallCenterUI_SecnarioStepDef.click_on_check_box_in_cancel_product_page(CallCenterUI_SecnarioStepDef.java:212)
+	at ✽.Click on CheckBox in Cancel product Page(file:///C:/Shubham/OMS-Balsam-Automation/BALSAM_OMS_EcommerceAutomationFramework/src/test/resources/features/web/CallCenterUI_Senarios.feature:60)
+</pre></div></td>
+<td>11</td>
+<td>testRunners.TestRunnerUi@6e4566f1</td></tr>
+<tr>
+<td title='testRunners.TestRunnerUi.runScenario()'><b>runScenario</b><br>Test class: testRunners.TestRunnerUi<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate applying header level discount in callcenter", "Call Center Login"</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;idxLink idxLinkDerived&quot; dojoattachpoint=&quot;containerNode, linkNode, focusNode, stateNode, oneuiBaseNode&quot; tabindex=&quot;0&quot; alt=&quot;&quot; role=&quot;link&quot; wairole=&quot;link&quot; aria-label=&quot;&quot; href=&quot;javascript:;&quot;&gt;...&lt;/a&gt; is not clickable at point (1075, 475). Other element would receive the click: &lt;div class=&quot;dijitDialogUnderlay scMask&quot; dojoattachpoint=&quot;node&quot; role=&quot;alert&quot; id=&quot;dialogId_underlay&quot; style=&quot;width: 1263px; height: 551px; text-align: center;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=120.0.6099.109)
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;SHUBHAMMALVIYA&apos;, ip: &apos;192.168.29.61&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3e15176099d0f7dc99b28701fcac42e0, clickElement {id=74E132D8A2712235EEC4E0E82882B26D_element_65}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59543}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59543/devtoo..., se:cdpVersion: 120.0.6099.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (3e15176099d0f7dc99b28701fcac42e0)] -&gt; link text: Manage Charges]
+Session ID: 3e15176099d0f7dc99b28701fcac42e0
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
+	at utils.BasePage.click(BasePage.java:58)
+	at pages.web.ManageChargesWebPage.clickManageChargesLink(ManageChargesWebPage.java:64)
+	at stepDefinitions.CallCenterUI_SecnarioStepDef.click_on_from_releated_task_sub_window(CallCenterUI_SecnarioStepDef.java:82)
+	at ✽.Click on &quot;ManageCharges&quot; from Releated Task sub window(file:///C:/Shubham/OMS-Balsam-Automation/BALSAM_OMS_EcommerceAutomationFramework/src/test/resources/features/web/CallCenterUI_Senarios.feature:26)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1631675519", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1631675519'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;idxLink idxLinkDerived&quot; dojoattachpoint=&quot;containerNode, linkNode, focusNode, stateNode, oneuiBaseNode&quot; tabindex=&quot;0&quot; alt=&quot;&quot; role=&quot;link&quot; wairole=&quot;link&quot; aria-label=&quot;&quot; href=&quot;javascript:;&quot;&gt;...&lt;/a&gt; is not clickable at point (1075, 475). Other element would receive the click: &lt;div class=&quot;dijitDialogUnderlay scMask&quot; dojoattachpoint=&quot;node&quot; role=&quot;alert&quot; id=&quot;dialogId_underlay&quot; style=&quot;width: 1263px; height: 551px; text-align: center;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=120.0.6099.109)
+Build info: version: &apos;4.4.0&apos;, revision: &apos;e5c75ed026a&apos;
+System info: host: &apos;SHUBHAMMALVIYA&apos;, ip: &apos;192.168.29.61&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3e15176099d0f7dc99b28701fcac42e0, clickElement {id=74E132D8A2712235EEC4E0E82882B26D_element_65}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 120.0.6099.71 (9729082fe617..., userDataDir: C:\Users\SHUBHA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59543}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59543/devtoo..., se:cdpVersion: 120.0.6099.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (3e15176099d0f7dc99b28701fcac42e0)] -&gt; link text: Manage Charges]
+Session ID: 3e15176099d0f7dc99b28701fcac42e0
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy32.click(Unknown Source)
+	at utils.BasePage.click(BasePage.java:58)
+	at pages.web.ManageChargesWebPage.clickManageChargesLink(ManageChargesWebPage.java:64)
+	at stepDefinitions.CallCenterUI_SecnarioStepDef.click_on_from_releated_task_sub_window(CallCenterUI_SecnarioStepDef.java:82)
+	at ✽.Click on &quot;ManageCharges&quot; from Releated Task sub window(file:///C:/Shubham/OMS-Balsam-Automation/BALSAM_OMS_EcommerceAutomationFramework/src/test/resources/features/web/CallCenterUI_Senarios.feature:26)
+</pre></div></td>
+<td>11</td>
+<td>testRunners.TestRunnerUi@6e4566f1</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testRunners.TestRunnerUi.runScenario()'><b>runScenario</b><br>Test class: testRunners.TestRunnerUi<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Validate the Manage Gift Option from callcenter", "Call Center Login"</td>
+<td></td>
+<td>11</td>
+<td>testRunners.TestRunnerUi@6e4566f1</td></tr>
 </table><p>
 </body>
 </html>

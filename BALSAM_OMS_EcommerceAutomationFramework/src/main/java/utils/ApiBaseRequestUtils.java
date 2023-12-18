@@ -17,7 +17,7 @@ public class ApiBaseRequestUtils {
 	 * To do:NA
 	 */
 	public static Response getRequest(String url, Map headers, Map params) {
-		Response response = RestAssured.given().log().all().headers(headers).params(params).get(url);
+		Response response = RestAssured.given().log().all().headers(headers).queryParams(params).get(url);
 		return response;
 	}
 
@@ -28,7 +28,7 @@ public class ApiBaseRequestUtils {
 	 * To do:NA
 	 */
 	public static Response postRequest(String url,Object obj, Map headers, Map params) {
-		Response response = RestAssured.given().contentType("application/xml").log().all().body(obj).headers(headers).params(params).post(url);
+		Response response = RestAssured.given().log().all().headers(headers).queryParams(params).body(obj).post(url);
 		return response;
 	} 
 	

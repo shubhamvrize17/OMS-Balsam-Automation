@@ -29,13 +29,12 @@ public class CancelProductWebPage extends BasePage {
 	@FindBy(xpath = "(//div[@aria-label='Choose an option:']//input)[3]")
 	private WebElement ChoseanOption;
 
-	@FindBy(xpath = "(//div[@uid='OLST_listGrid']/descendant::span[@class= 'gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox '])[2]")
-	                 
-	private WebElement CheckBtn;
-	
 	@FindBy(xpath = "(//div[@uid='OLST_listGrid']/descendant::span[@class= 'gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox '])[3]")
 	private WebElement partialCheckBtn;
 
+	@FindBy(xpath = "(//div[@uid='OLST_listGrid']/descendant::span[@class= 'gridxIndirectSelectionCheckBox dijitReset dijitInline dijitCheckBox '])[2]")                 
+	private WebElement CheckBtn;
+	
 	@FindBy(xpath = "(//*[@uid='navigationPanel']//span)[12]")
 	private WebElement NextBtn;
 

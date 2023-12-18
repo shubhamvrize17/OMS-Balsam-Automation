@@ -1,0 +1,40 @@
+<Order CustomerEMailID="shari345sh@bgyalsambrands.com" CustomerFirstName="KAVITA" CustomerLastName="SACHDEVA" CustomerPhoneNo="+14084444444" CustomerZipCode="12472" DocumentType="0001" EnterpriseCode="BH_US" EntryType="WEBSITE" LevelOfService="Standard" OrderDate="2023-11-30T03:00:08Z" OrderNo="" OrderType="HYBRIS" SellerOrganizationCode="BH_US" ReqShipDate="" TaxExemptFlag="">
+<PriceInfo Currency="USD"/>
+<Extn ExtnGaTagId="xd234234" ExtnCustomerID="60279c1e-5298-4303-aab7-89c7fe0665ec" ExtnFraudStatus="ACCEPT" ExtnSMSOptIn="Y" ExtnOrderLocaleCode="UTC" ExtnIsAvalara="Y" ExtnTaxTransactionDate="2023-07-20"/>
+<OrderLines>
+<OrderLine DeliveryMethod="SHP" ItemGroupCode="PROD" OrderedQty="1" PrimeLineNo="1" SubLineNo="1" Segment="ONLINE" SegmentType="WEBSITE" ReqShipDate="" PersonalizeFlag="N">
+<Extn ExtnPremiumGuaranteeEndDate="2023-11-20T06:23:51+00:00" ExtnMfgWarrantyStartDate="2023-11-09T06:23:51+00:00" ExtnMfgWarrantyEndDate="2023-11-20T06:23:51+00:00"/>
+<Item TaxProductCode="P0000000" ItemID="MYPPCRT6" ProductClass="NEW" UnitOfMeasure="EACH"/>
+<LinePriceInfo IsPriceLocked="Y" UnitPrice="100" RetailPrice="100"/>
+<LineTaxes>
+<LineTax ChargeCategory="PRODUCT" ChargeName="06-U-0.06" Tax="60.0" TaxName="CA STATE TAX" TaxPercentage="0.06"/>
+<LineTax ChargeCategory="PRODUCT" ChargeName="081-U-0.0025" Tax="2.5" TaxName="CA COUNTY TAX" TaxPercentage="0.0025"/>
+<LineTax ChargeCategory="PRODUCT" ChargeName="EMBG0-U-0.02125" Tax="21.25" TaxName="CA SPECIAL TAX" TaxPercentage="0.02125"/>
+<LineTax ChargeCategory="PRODUCT" ChargeName="EMTY0-U-0.01" Tax="10.0" TaxName="CA SPECIAL TAX" TaxPercentage="0.01"/>
+</LineTaxes>
+</OrderLine>
+<OrderLine DeliveryMethod="SHP" ItemGroupCode="PROD" OrderedQty="1" PrimeLineNo="2" SubLineNo="1" Segment="ONLINE" SegmentType="WEBSITE" ReqShipDate="" PersonalizeFlag="N">
+<Extn ExtnPremiumGuaranteeEndDate="2023-11-20T06:23:51+00:00" ExtnMfgWarrantyStartDate="2023-11-09T06:23:51+00:00" ExtnMfgWarrantyEndDate="2023-11-20T06:23:51+00:00"/>
+<Item TaxProductCode="P0000000" ItemID="Test100AU" ProductClass="NEW" UnitOfMeasure="EACH"/>
+<LinePriceInfo IsPriceLocked="Y" UnitPrice="100" RetailPrice="100"/>
+<LineTaxes>
+<LineTax ChargeCategory="PRODUCT" ChargeName="06-U-0.06" Tax="60.0" TaxName="CA STATE TAX" TaxPercentage="0.06"/>
+<LineTax ChargeCategory="PRODUCT" ChargeName="081-U-0.0025" Tax="2.5" TaxName="CA COUNTY TAX" TaxPercentage="0.0025"/>
+<LineTax ChargeCategory="PRODUCT" ChargeName="EMBG0-U-0.02125" Tax="21.25" TaxName="CA SPECIAL TAX" TaxPercentage="0.02125"/>
+<LineTax ChargeCategory="PRODUCT" ChargeName="EMTY0-U-0.01" Tax="10.0" TaxName="CA SPECIAL TAX" TaxPercentage="0.01"/>
+</LineTaxes>
+</OrderLine>
+</OrderLines>
+<PaymentMethods>
+<PaymentMethod CreditCardExpDate="1225" CreditCardNo="0000" DisplayCreditCardNo="1111" CreditCardType="VISA" FirstName="Test" LastName="" PaymentType="CREDIT_CARD">
+<PaymentDetailsList>
+<PaymentDetails AuthTime="2023-07-13T10:27:48Z" AuthorizationExpirationDate="2023-07-20 10:27:48" AuthorizationID="8tmkvxqd" ChargeType="CHARGE" ProcessedAmount="193.75" RequestAmount="193.75"/>
+</PaymentDetailsList>
+</PaymentMethod>
+</PaymentMethods>
+<Instructions/>
+<PersonInfoShipTo AddressLine1="158 GREAT RD UNIT J BEDFORD" AddressLine2="" AddressLine3="" City="BEDFORD" Company="" Country="US" DayPhone="845-658-8084" Beeper="" EMailID="shari345sh@bgyalsambrands.com" FirstName="Kavita" LastName="Sachdeva" State="MA" ZipCode="01730" IsCommercialAddress="Y"/>
+<PersonInfoBillTo AddressLine1="11 W 53rd St" AddressLine2="" AddressLine3="" City="Denver" Company="" Country="US" DayPhone="+17977987987" Beeper="" EMailID="shari345sh@bgyalsambrands.com" FirstName="Kavita" LastName="Sachdeva" State="NY" ZipCode="12472" IsCommercialAddress="Y"/>
+<HeaderCharges>
+</HeaderCharges>
+</Order>

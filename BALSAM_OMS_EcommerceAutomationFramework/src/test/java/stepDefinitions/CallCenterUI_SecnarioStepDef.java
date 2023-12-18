@@ -162,7 +162,7 @@ public class CallCenterUI_SecnarioStepDef extends BasePage {
 		manageGp.displayConfirmButton();
 	}
 
-	// Scenario: 4
+	// Scenario: 4 Partial Cancel Product
 
 	@Then("Click on cancel product from Releated Task sub window")
 	public void click_on_cancel_product_from_releated_task_sub_window() {
@@ -181,9 +181,9 @@ public class CallCenterUI_SecnarioStepDef extends BasePage {
 		cancelPd.clickChoseanOption();
 	}
 
-	@When("Click on CheckBox in Cancel product Page")
-	public void click_on_check_box_in_cancel_product_page() {
-		cancelPd.selectCheckBtn();
+	@When("Click on CheckBox in Partial Cancel product Page")
+	public void click_on_check_box_in_partial_cancel_product_page() {
+		cancelPd.partialselectCheckBtn();
 	}
 
 	@Then("Click on the Next button Cancel Product Page")
@@ -201,16 +201,20 @@ public class CallCenterUI_SecnarioStepDef extends BasePage {
 		cancelPd.selectConfirmBtn();
 	}
 
+	@Then("Verify the order should be get partial cancelled on order summury page")
+	public void verify_the_order_should_be_get_partial_cancelled_on_order_summury_page() {
+		cancelPd.displayCancelProduct();
+	}
+
+	// Scenario -5  Cancel product
+	@When("Click on CheckBox in Cancel product Page")
+	public void click_on_check_box_in_cancel_product_page() {
+		cancelPd.selectCheckBtn();
+	}
+
 	@Then("Verify the order should be get cancelled on order summury page")
 	public void verify_the_order_should_be_get_cancelled_on_order_summury_page() {
 		cancelPd.displayCancelProduct();
-	}
-	
-	//Scenario -5partial
-	
-	@When("Click on CheckBox in Partial Cancel product Page")
-	public void click_on_check_box_in_partial_cancel_product_page() {
-		cancelPd.partialselectCheckBtn();
 	}
 
 }

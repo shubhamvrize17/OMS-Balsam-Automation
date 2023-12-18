@@ -59,7 +59,7 @@ public class ManageGiftOptions extends BasePage {
 	}
 
 	public void clickManageGiftOptionsLink() {
-		click(ManageGiftOptionsLink, WaitLogic.CLICKABLE, "ManageGiftOptionsLink");
+		jsClick(ManageGiftOptionsLink, WaitLogic.CLICKABLE, "ManageGiftOptionsLink");
 	}
 
 	public void clickOnNextButton() {
